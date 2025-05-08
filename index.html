@@ -54,6 +54,21 @@
             font-size: 0.9em;
         }
 
+        .image-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .image-gallery img {
+            width: calc(50% - 10px);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            object-fit: cover;
+        }
+
         @media (max-width: 600px) {
             header h1 {
                 font-size: 1.8em;
@@ -61,6 +76,10 @@
 
             .container {
                 padding: 10px;
+            }
+
+            .image-gallery img {
+                width: 100%;
             }
         }
     </style>
@@ -158,8 +177,18 @@
         </section>
 
         <section>
+            <h2>🖼️ Ілюстрації</h2>
+            <div class="image-gallery">
+                <img src="linux-icon.png" alt="Опис 1">
+                <img src="linus.jpeg" alt="Опис 2">
+                <img src="Arch_Linux_screenshot.png" alt="Опис 3">
+                <img src="slackware12.jpg" alt="Опис 4">
+            </div>
+        </section>
+
+        <section>
             <h2>🔚 Висновок</h2>
-            <p>Із невеликого студентського проєкту Linux виріс у глобальну платформу. Його відкритість, гнучкість та
+            <p>Із студентського проєкту Linux виріс у глобальну платформу. Його відкритість, гнучкість та
                 потужна спільнота зробили Linux основою для тисяч систем — від серверів до смартфонів. Історія Linux —
                 це історія свободи, співпраці та технологічного поступу.</p>
         </section>
